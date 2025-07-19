@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Friend</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1301325736/photo/portrait-of-young-woman-stock-photo.jpg?s=1024x1024&w=is&k=20&c=w1KSnLBX_2BTnPNE9moe5vxGOVZiHJMa17Tz6jozhCg="  alt="">
+
+        <h1>Sara Lily</h1>
+        <p id="stranger">Unknown</p>
+
+        <div class="buttons">
+            <button id="add-friend">Add Friend</button>
+            <button id="remove"> Remove</button>
+        </div>
+    </div>
+
+    <script>
+        const stranger = document.querySelector('#stranger')
+        const addFriend = document.querySelector('#add-friend')
+        const remove = document.querySelector('#remove')
+        let check = 0;
+
+        addFriend.addEventListener('click', () => {
+            if(check==0){  // done this because when we continuously click on add friend. it will evaluate only once
+                stranger.innerHTML = "Friends.";
+                stranger.style.color = 'green'
+            }
+            check = 1;
+        })
+
+        remove.addEventListener('click', () => {
+            stranger.textContent = `Unfriend`
+            stranger.style.color = 'orange'
+        })
+
+    </script>
+</body>
+</html>

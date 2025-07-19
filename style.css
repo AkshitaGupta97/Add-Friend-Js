@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilory';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 55, 62);
+}
+.card {
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 10px 12px 14px rgb(124, 130, 141);
+    padding: 20px;
+    text-align: center;
+}
+.card img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h1 {
+    font-size: 24px;
+    margin: 10px;
+    font-weight: 800;
+   
+}
+.card p {
+    font-size: 20px;
+    color: rgb(251, 19, 57);
+    margin: 20px;
+    font-weight: 600;
+}
+.card button {
+    background-color: rgb(46, 125, 127);
+    color: white;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+.card #remove {
+    background-color: #a19898;
+    color: black;
+}
